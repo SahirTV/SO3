@@ -1,0 +1,16 @@
+Practica 1
+nano /etc/default/grub
+grub2-mkconfig -o /boot/grub2/grub.cfg
+e
+rw init=/sysroot/bin/sh
+chroot /sysroot
+passwd root
+exit 
+reboot
+
+Practica 2
+
+
+
+Practica 3
+
