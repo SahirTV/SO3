@@ -1,0 +1,13 @@
+Practica 1
+sudo dnf update -y
+sudo dnf upgrade -y
+dnf repolist
+dnf repolist all
+dnf search bashtop
+sudo dnf install epel-release
+git clone https://github.com/aristocratos/bashtop.git
+cd bashtop
+sudo make install
+sudo make uninstall
+sudo dnf remove bashtop
+dnf autoremove
