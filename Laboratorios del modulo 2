@@ -11,3 +11,24 @@ sudo make install
 sudo make uninstall
 sudo dnf remove bashtop
 dnf autoremove
+
+Practica 2
+sudo crontab -e
+0 23 * * * dnf -y update
+0 3 * * 0 /sbin/reboot
+sudo systemctl status atd
+ls /tmp
+echo "rm -rf /tmp/*" | at now + 1 minute
+ls /tmp
+
+Practica 3
+lsblk
+sudo fdisk /dev/sdb
+sudo mkfs.ext4 /dev/sdb1
+mkdir -p ~/Escritorio/NuevoDisco
+sudo mount /dev/sdb1 ~/Escritorio/DiscoNuevo
+cd ~/Escritorio/DiscoNuevo
+touch AdrianAlcantara.txt
+sudo umount /dev/sdb1
+sudo mount /dev/sdb1 /mnt
+ls /mnt
